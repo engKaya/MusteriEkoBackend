@@ -1,0 +1,111 @@
+﻿html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, u {
+    text-decoration: none !important;
+}
+
+body {
+    width:100vw;
+    height:100vh;
+    min-height:100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.c-container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    min-width: 325px;
+    padding:35px 15px;
+}
+
+
+/* Side Menu Starting */
+
+.side-menu {
+    width: 25%;
+    height: 100%;
+    background-color: gray;
+    min-width: 175px;
+    max-width: 225px;
+    padding: 10px 5px;
+}
+
+.side-container {
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.brand-area {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-area h3 {
+    transform: translateY(-25%);
+    font-weight: bold;
+    color: whitesmoke;
+    font-family: Gadugi;
+}
+
+.brand-area h3:hover {
+    cursor:default
+}
+
+.side-menu-area {
+    width:75%;
+    height: 75%;
+}
+
+.menu-list {
+    list-style:none;
+    padding:10px 0px;
+}
+
+.menu-list li {
+    margin-bottom: 15px;
+}
+
+.menu-list li a {
+    text-decoration: none !important;
+    color: whitesmoke;
+    font-size: 1.75rem;
+    font-weight: 500;  
+}
+
+.menu-list li a:hover {
+    cursor:pointer;
+}
+
+.menu-list li .menu-hover-bar {
+    height: 5px;
+    width:0;
+    background-color: whitesmoke;
+    transition: width ease 0.3s
+}
+
+.menu-list li a:hover ~ .menu-hover-bar {
+    width:100%;
+}
+/* Side Menu Ending */
